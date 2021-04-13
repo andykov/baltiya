@@ -119,6 +119,9 @@
   }
 
   &__copy {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 24px 0;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     margin-top: 20px;
@@ -131,6 +134,9 @@
       font-weight: $font-semibold;
       line-height: 1;
       opacity: 1;
+      @include sm-max {
+        margin-bottom: 10px;
+      }
     }
   }
 

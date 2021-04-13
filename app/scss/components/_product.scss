@@ -23,16 +23,21 @@
     font-weight: $font-medium;
     margin-bottom: 30px;
 
-    span {
-      font-size: var(--fs-base);
-      font-weight: $font-medium;
-      color: var(--color-dark);
-      opacity: 0.5;
-    }
     li {
       line-height: 1;
       margin-bottom: 8px;
+
+      > span {
+        font-size: var(--fs-base);
+        font-weight: $font-medium;
+        color: var(--color-dark);
+        opacity: 0.5;
+      }
     }
+  }
+
+  &__fullsize {
+    color: rgba($color: #222, $alpha: 0.7);
   }
 
   &__price {
@@ -42,23 +47,57 @@
     margin-bottom: 20px;
     padding-top: 6px;
 
-    span {
+    > span {
       display: none;
     }
 
     &--sale {
-      color: var(--color-red);
-      font-size: var(--fs-medium);
-
-      s {
-        display: block;
-        color: var(--color-dark);
-        font-size: var(--fs-base);
-
-        @include sm-max {
-          display: none;
+      .price {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        flex-direction: column-reverse;
+        font-size: var(--fs-medium);
+        @include md {
+          font-size: 20px;
+        }
+        @include xl {
+          flex-direction: row;
+        }
+        span,
+        s {
+          white-space: nowrap;
+        }
+        span {
+          color: var(--color-red);
+          @include lg-max {
+            padding-bottom: 6px;
+          }
+        }
+        s {
+          color: var(--color-dark);
+          margin-right: 12px;
         }
       }
+    }
+  }
+
+  &__depth,
+  &__size {
+    @include sm-max {
+      display: none;
+    }
+  }
+
+  &__length,
+  &__width {
+    display: none;
+  }
+
+  &__length,
+  &__width,
+  &__fullsize {
+    @include md {
+      display: none;
     }
   }
 
