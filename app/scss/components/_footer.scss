@@ -1,0 +1,146 @@
+.footer {
+  background-color: var(--color-light);
+  padding-top: 65px;
+
+  a {
+    // color: rgba($color: var(--color-dark), $alpha: 0.7);
+    opacity: 0.7;
+
+    &[href^='tel'] {
+      font-size: var(--fs-small);
+      // color: var(--color-dark);
+      opacity: 1;
+    }
+  }
+
+  ul {
+    li {
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+  }
+
+  &__inner {
+    display: flex;
+
+    flex-direction: column;
+
+    @include md {
+      flex-wrap: wrap;
+      flex-direction: row;
+    }
+    @include lg {
+      flex-direction: row;
+    }
+
+    // @include row(
+    //   $xs-grid-gutter: 20px,
+    //   $sm-grid-gutter: 20px,
+    //   $md-grid-gutter: $grid-gutter-width,
+    //   $lg-grid-gutter: 30px,
+    //   $xl-grid-gutter: $grid-gutter-width,
+    //   $xxl-grid-gutter: $grid-gutter-width
+    // );
+  }
+
+  &__info,
+  &__nav {
+    width: 192px;
+    // @include col(xs, 12, $grid-columns, 20px);
+    // @include col(md, 6, $grid-columns, 30px);
+    // @include col(lg, 4, $grid-columns, 30px);
+    // @include col(xl, 5, 15, 60px);
+  }
+
+  &__title {
+    display: block;
+    font-size: var(--fs-medium);
+    font-weight: $font-bold;
+    line-height: 1;
+    margin-bottom: 15px;
+    @include lg {
+      margin-bottom: 22px;
+    }
+  }
+
+  &__logo {
+    display: block;
+    margin-bottom: 25px;
+    @include md {
+      max-width: 185px;
+      margin-bottom: 0;
+    }
+    @include lg {
+      max-width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+
+  &__info {
+    margin-bottom: 40px;
+    @include md {
+      margin-right: 70px;
+      margin-bottom: 60px;
+    }
+    @include lg {
+      margin-right: 100px;
+      margin-bottom: 25px;
+    }
+    @include xl {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__contacts {
+    margin-bottom: 35px;
+  }
+
+  &__works {
+    margin-bottom: 30px;
+    .footer__title {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 40px;
+    @include md {
+      margin-bottom: 35px;
+    }
+
+    &--about {
+      margin-right: 30px;
+    }
+    &--catalog {
+      margin-right: 74px;
+    }
+    &--info {
+    }
+  }
+
+  &__copy {
+    padding: 24px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    @include lg {
+      margin-top: 30px;
+    }
+    a {
+      white-space: nowrap;
+      margin-right: 70px;
+      font-weight: $font-semibold;
+      line-height: 1;
+      opacity: 1;
+    }
+  }
+
+  // .social {
+  //   padding-top: 20px;
+  //   @include md {
+  //     padding-top: 0;
+  //   }
+  //   @include lg {
+  //     padding-top: 20px;
+  //   }
+  // }
+}

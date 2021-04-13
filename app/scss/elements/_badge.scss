@@ -1,0 +1,45 @@
+.badges {
+  display: flex;
+  flex-direction: column;
+
+  .badge {
+    margin-bottom: 2px;
+
+    @include md {
+      margin-bottom: 5px;
+    }
+    @include lg {
+      padding: 8px 0;
+    }
+  }
+}
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: $font-semibold;
+  color: white;
+  line-height: 1;
+  text-align: center;
+  width: 35px;
+  padding: 5px;
+
+  @include lg {
+    width: 70px;
+    padding: 6px;
+  }
+
+  &--sale {
+    background-color: var(--color-red);
+    @include xl {
+      font-size: 14px;
+    }
+  }
+  &--new {
+    background-color: var(--color-green);
+    @include xl {
+      font-size: 13px;
+    }
+  }
+}

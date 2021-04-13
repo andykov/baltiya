@@ -1,0 +1,29 @@
+.category {
+  &__list {
+    @include row(
+      $xs-grid-gutter: 20px,
+      $sm-grid-gutter: 20px,
+      $md-grid-gutter: $grid-gutter-width,
+      $lg-grid-gutter: 30px,
+      $xl-grid-gutter: $grid-gutter-width + 20px,
+      $xxl-grid-gutter: $grid-gutter-width + 20px
+    );
+  }
+
+  &__item {
+    margin-bottom: 35px;
+    @include md {
+      margin-bottom: 30px;
+    }
+    @include lg {
+      margin-bottom: 40px;
+    }
+    @include xl {
+      margin-bottom: 45px;
+    }
+    @include col(xs, 12, $grid-columns, 20px);
+    @include col(md, 6, $grid-columns, 30px);
+    @include col(lg, 4, $grid-columns, 30px);
+    @include col(xl, 4, $grid-columns, 60px);
+  }
+}

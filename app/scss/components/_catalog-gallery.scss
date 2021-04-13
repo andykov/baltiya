@@ -1,0 +1,79 @@
+.catalog-gallery {
+  margin-bottom: 40px;
+
+  @include lg {
+    margin-bottom: 60px;
+  }
+
+  @include xl {
+    margin-bottom: 70px;
+  }
+
+  &--compare & {
+    &__panes {
+      padding-top: 45px;
+    }
+  }
+
+  &__tabs {
+    button {
+      outline: none;
+      color: #b6b6b6;
+      font-size: 22px;
+      font-weight: $font-bold;
+      line-height: 1;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      transform: translateY(0);
+      transition: transform $transition-time;
+      @include md {
+        font-size: 26px;
+      }
+      @include lg {
+        font-size: 30px;
+      }
+      @include xl {
+        font-size: 32px;
+      }
+
+      &.active {
+        font-size: 30px;
+        transform: translateY(-5px);
+        color: $black;
+        @include md {
+          font-size: 34px;
+        }
+        @include lg {
+          font-size: 38px;
+        }
+        @include xl {
+          font-size: 42px;
+        }
+      }
+
+      &:hover {
+        color: $black;
+      }
+
+      &:not(:first-child) {
+        margin-left: 15px;
+        @include md {
+          margin-left: 25px;
+        }
+        @include xl {
+          margin-left: 50px;
+        }
+      }
+    }
+  }
+
+  .splide {
+    &__arrows {
+      margin-top: 50px;
+      @include md {
+        margin-top: 40px;
+      }
+    }
+  }
+}

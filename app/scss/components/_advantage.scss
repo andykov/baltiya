@@ -1,0 +1,38 @@
+.advantage {
+  display: grid;
+  gap: 40px;
+  padding: 40px 0 60px;
+
+  @include md {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 80px;
+    padding: 65px 0 80px;
+  }
+
+  @include lg {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 65px;
+    padding: 80px 0;
+  }
+  @include xl {
+    padding: 120px 0;
+  }
+
+  &__icon {
+    margin-bottom: 25px;
+    @include md {
+      margin-bottom: 35px;
+    }
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: $font-bold;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    line-height: 1.2;
+  }
+}

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>OptimizedHTML 5</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/favicon.png" />
+    <meta property="og:image" content="img/dest/preview.jpg" />
+    <link rel="stylesheet" href="css/vendor/sal.css" />
+    <link rel="stylesheet" href="css/vendor/splide-core.min.css" />
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      @@include('modules/_header.html')
+
+      <main class="main">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="/">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span>Шлифованный</span>
+            </li>
+          </ul>
+          <div class="main__content">
+            <div class="product-detail">
+              <div class="product-detail__gallery">
+                <div id="product-gallery" class="splide">
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <div class="badges">
+                          <span class="badge badge--sale">-21%</span>
+                          <span class="badge badge--new">NEW</span>
+                        </div>
+                        <picture>
+                          <source
+                            srcset="
+                              img/content/product-detail-large.webp    1x,
+                              img/content/product-detail-large@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="img/content/product-detail-large.jpg"
+                            srcset="
+                              img/content/product-detail-large.jpg    1x,
+                              img/content/product-detail-large@2x.jpg 2x
+                            "
+                            alt="Мебельный щит"
+                          />
+                        </picture>
+                      </li>
+                      <li class="splide__slide">
+                        <picture>
+                          <source
+                            srcset="
+                              img/content/product-detail-large.webp    1x,
+                              img/content/product-detail-large@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="img/content/product-detail-large.jpg"
+                            srcset="
+                              img/content/product-detail-large.jpg    1x,
+                              img/content/product-detail-large@2x.jpg 2x
+                            "
+                            alt="Мебельный щит"
+                          />
+                        </picture>
+                      </li>
+                      <li class="splide__slide">
+                        <picture>
+                          <source
+                            srcset="
+                              img/content/product-detail-large.webp    1x,
+                              img/content/product-detail-large@2x.webp 2x
+                            "
+                            type="image/webp"
+                          />
+                          <img
+                            src="img/content/product-detail-large.jpg"
+                            srcset="
+                              img/content/product-detail-large.jpg    1x,
+                              img/content/product-detail-large@2x.jpg 2x
+                            "
+                            alt="Мебельный щит"
+                          />
+                        </picture>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div
+                  id="product-gallery-preview"
+                  class="splide splide--preview"
+                >
+                  <div class="splide__track">
+                    <ul class="splide__list">
+                      <li class="splide__slide">
+                        <img
+                          src="img/content/product-detail-preview.jpg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="splide__slide">
+                        <img
+                          src="img/content/product-detail-preview.jpg"
+                          alt=""
+                        />
+                      </li>
+                      <li class="splide__slide">
+                        <img
+                          src="img/content/product-detail-preview.jpg"
+                          alt=""
+                        />
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="product-detail__info">
+                <div class="product-detail__title">
+                  <h1>Шлифованный</h1>
+                  <span class="text-green">Товар в наличии</span>
+                </div>
+                <ul class="product-detail__spec">
+                  <li>
+                    <span>Толщина</span>
+                    10 мм
+                  </li>
+                  <li>
+                    <span>Ширина</span>
+                    2 070 мм
+                  </li>
+                  <li>
+                    <span>Длина</span>
+                    2 800 мм
+                  </li>
+                  <li>
+                    <span>Тип</span>
+                    Шлифованный
+                  </li>
+                </ul>
+                <div class="product-detail__quantity">
+                  <strong>Количество</strong>
+                  <div class="field-quantity">
+                    <input
+                      class="field-quantity__minus"
+                      type="button"
+                      value="-"
+                      data-field="quantity"
+                    />
+                    <input
+                      class="field-quantity__input"
+                      type="number"
+                      step="1"
+                      value="1"
+                      name="quantity"
+                    />
+                    <input
+                      class="field-quantity__plus"
+                      type="button"
+                      value="+"
+                      data-field="quantity"
+                    />
+                  </div>
+                </div>
+                <div class="product-detail__price">
+                  <strong>Итоговая цена</strong>
+                  <ul>
+                    <li>
+                      <b class="text-red">17 850 ₽</b>
+                      <span>Со скидкой 21%</span>
+                    </li>
+                    <li>
+                      <b><s>21 000 ₽</s></b>
+                      <span>Без скидки</span>
+                    </li>
+                  </ul>
+                </div>
+                <button class="btn">Заказать</button>
+                <div class="product-detail__delivery">
+                  <h4>Доставка</h4>
+                  <ul>
+                    <li>доставка по Санкт-Петербургу и области</li>
+                    <li>возможна доставка по России</li>
+                  </ul>
+                  <a href="">Подробнее</a>
+                </div>
+                <div class="product-detail__payment">
+                  <h4>Оплата</h4>
+                  <ul>
+                    <li>через банковскую карту</li>
+                    <li>по безналичному счету</li>
+                    <li>наличными</li>
+                  </ul>
+                  <a href="">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <h2>Похожие предложения</h2>
+            <div id="slider-products-similar" class="splide">
+              <div class="splide__track">
+                <div class="splide__list">
+                  <div class="splide__slide">
+                    @@include('modules/_product.html')
+                  </div>
+                  <div class="splide__slide">
+                    @@include('modules/_product.html')
+                  </div>
+                  <div class="splide__slide">
+                    @@include('modules/_product.html')
+                  </div>
+                  <div class="splide__slide">
+                    @@include('modules/_product.html')
+                  </div>
+                  <div class="splide__slide">
+                    @@include('modules/_product.html')
+                  </div>
+                  <div class="splide__slide">
+                    @@include('modules/_product.html')
+                  </div>
+                  <div class="splide__slide">
+                    @@include('modules/_product.html')
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('modules/_footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

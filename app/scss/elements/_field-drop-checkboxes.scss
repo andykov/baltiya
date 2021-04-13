@@ -1,0 +1,50 @@
+.field-drop-checkboxes {
+  // padding: 10px 15px 5px;
+  .field-checkbox {
+    // padding: 6px 0;
+
+    // @include lg {
+    //   padding: 16px 0;
+    // }
+  }
+  .field-checkbox,
+  .field-checkbox__name {
+    margin-bottom: 0;
+  }
+  .field-checkbox__name {
+    display: block;
+    padding-left: 4.2em;
+    padding-right: 0.8em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @include lg {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+  }
+  .field-checkbox__name-text {
+    text-transform: none;
+    font-size: 18px;
+    line-height: 1;
+
+    &:before {
+      top: 9px;
+      left: 15px;
+
+      @include lg {
+        top: 19px;
+      }
+    }
+  }
+  input:checked ~ .field-checkbox__name-text:before {
+  }
+  input:checked ~ .field-checkbox__name-text:after {
+    top: 15px;
+    left: 21px;
+
+    @include lg {
+      top: 25px;
+    }
+  }
+}

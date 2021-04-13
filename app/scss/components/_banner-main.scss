@@ -1,0 +1,65 @@
+.banner-main {
+  height: 320px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 25px 0;
+
+  @include lg {
+    height: 420px;
+  }
+  @include xl {
+    height: 560px;
+  }
+
+  .container {
+    height: 100%;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+
+    @include md {
+      justify-content: center;
+    }
+  }
+
+  &__title {
+    max-width: 840px;
+    font-size: 32px;
+    font-weight: $font-bold;
+    line-height: 1;
+    margin-bottom: 12px;
+
+    @include md {
+      margin-bottom: 16px;
+      font-size: 38px;
+    }
+    @include lg {
+      margin-bottom: 20px;
+      font-size: 56px;
+    }
+    @include xl {
+      margin-bottom: 25px;
+      font-size: var(--fs-xl);
+    }
+  }
+
+  &__subtitle {
+    font-size: 16px;
+    font-weight: $font-medium;
+    line-height: 1;
+    opacity: 0.9;
+
+    @include md {
+      font-size: 18px;
+    }
+    @include lg {
+      font-size: 20px;
+    }
+  }
+}

@@ -1,0 +1,45 @@
+.category-box {
+  a {
+    text-decoration: none;
+    &:hover {
+      .category-box__preview {
+        opacity: 0.8;
+      }
+      .category-box__title {
+        color: var(--color-main);
+      }
+    }
+  }
+
+  &__preview {
+    margin-bottom: 12px;
+    transition: opacity var(--duration) ease;
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: color var(--duration) ease;
+
+    &::after {
+      content: '';
+      display: inline-block;
+      vertical-align: middle;
+      width: 44px;
+      height: 44px;
+      border-radius: 100%;
+      background: rgba($color: #c4c4c4, $alpha: 0.2)
+        url('../img/icons/arrow.svg') no-repeat center center;
+
+      @include lg {
+        width: 46px;
+        height: 46px;
+      }
+    }
+  }
+}

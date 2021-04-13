@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>OptimizedHTML 5</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/favicon.png" />
+    <meta property="og:image" content="img/dest/preview.jpg" />
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      <header class="header">
+  <div class="header__top-panel top-panel">
+    <div class="container">
+      <div class="top-panel__inner">
+        <ul class="top-panel__info">
+          <li>
+            <svg width="8" height="11">
+              <use xlink:href="img/icons.svg#map-point"></use>
+            </svg>
+            Пискаревский пр, 125Х
+          </li>
+          <li>Пн – Пт с 9:00 до 18:00</li>
+          <li>
+            <a href="tel:+78127190404">+7(812)719-04-04</a>
+            <a href="javascript:;" class="btn btn--link">Заказать звонок</a>
+          </li>
+        </ul>
+        <div class="top-panel__search">
+          <div class="search">
+            <svg class="search__icon" width="13" height="13">
+              <use xlink:href="img/icons.svg#search"></use>
+            </svg>
+            <input
+              class="search__input"
+              type="text"
+              name="search"
+              id="search"
+              placeholder="Поиск"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__main">
+    <div class="container">
+      <div class="header__inner">
+        <a href="/" class="header__logo logo">
+          <picture>
+            <source
+              srcset="img/logo.png 1x, img/logo@2x.png 2x"
+              type="image/png"
+            />
+            <img src="img/logo.png" alt="Балтия" />
+          </picture>
+        </a>
+        <nav class="header__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="catalog-category.html" class="nav__link">Каталог</a>
+            </li>
+            <li class="nav__item">
+              <a href="stock.html" class="nav__link active">Акции</a>
+            </li>
+            <li class="nav__item">
+              <a href="new.html" class="nav__link">Новинки</a>
+            </li>
+            <li class="nav__item">
+              <a href="about.html" class="nav__link">О компании</a>
+            </li>
+            <li class="nav__item">
+              <a href="contacts.html" class="nav__link">Контакты</a>
+            </li>
+            <li class="nav__item">
+              <a href="delivery-pay.html" class="nav__link"
+                >Доставка и оплата</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="articles.html" class="nav__link">Статьи</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__download">
+          <a href="price-list.pdf" class="btn btn--outline"
+            >Скачать прайс лист</a
+          >
+        </div>
+        <button type="button" class="mobile-trigger">
+          <span class="mobile-trigger__icon"></span>
+          Меню
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <main class="main">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="/">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="/">Плитные материалы</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span>МДФ Ламинированный</span>
+            </li>
+          </ul>
+          <div class="main__content">
+            <div class="catalog">
+              <h1>Каталог</h1>
+
+              <ul class="catalog__category">
+                <li>
+                  <a href="catalog-detail.html">МДФ Шпонированный Сапеле</a>
+                </li>
+                <li>
+                  <a href="catalog-detail.html">Щит Ясень сростка/цельноламельный</a>
+                </li>
+                <li>
+                  <a href="catalog-detail.html">Щит Ясень сростка/цельноламельный</a>
+                </li>
+                <li>
+                  <a href="catalog-detail.html">Абразивы</a>
+                </li>
+                <li>
+                  <a href="catalog-detail.html">Масло с воском</a>
+                </li>
+                <li>
+                  <a href="catalog-detail.html">Брусок экзотических пород древесины</a>
+                </li>
+                <li>
+                  <a href="catalog-detail.html">Шпон экзотические породы</a>
+                </li>
+              </ul>
+
+              <div class="catalog__holder">
+                <aside class="catalog__filter">
+                  <div class="filter">
+                    <div class="filter__head" data-mobile-filter>
+                      <span class="filter__title">Фильтр</span>
+                    </div>
+                    <form class="filter__form" action="">
+                      <div class="filter__part">
+                        <div class="filter__name">Тип склейки</div>
+                        <div class="filter__fields">
+                          <div class="field-radio">
+                            <label class="field-radio__name">
+                              <input
+                                class="field-radio__input"
+                                type="radio"
+                                name="gluing"
+                              />
+                              <span class="field-radio__name-text"
+                                >Цельноламельный</span
+                              >
+                            </label>
+                          </div>
+                          <div class="field-radio">
+                            <label class="field-radio__name">
+                              <input
+                                class="field-radio__input"
+                                type="radio"
+                                name="gluing"
+                                checked
+                              />
+                              <span class="field-radio__name-text"
+                                >Срощенный</span
+                              >
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="filter__part">
+                        <div class="filter__name" data-filter-collapse>Длина</div>
+                        <div class="filter__collapse">
+                          <div class="filter__fields">
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="length"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >900</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="length"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >1000</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="length"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >1100</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="length"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >1200</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="length"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >1300</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox" hidden data-filter-more>
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="length"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >1400</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="length"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >1500</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                          <span class="filter__more" data-text-replace="Скрыть">Показать еще</span>
+                        </div>
+                      </div>
+                      <div class="filter__part">
+                        <div class="filter__name" data-filter-collapse>Ширина</div>
+                        <div class="filter__collapse">
+                          <div class="filter__fields">
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="width"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >50</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="width"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >80</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="width"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >100</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="width"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >200</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="width"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >300</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox" hidden data-filter-more>
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="width"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >400</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="width"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >500</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                          <span class="filter__more" data-text-replace="Скрыть">Показать еще</span>
+                        </div>
+                      </div>
+                      <div class="filter__part">
+                        <div class="filter__name" data-filter-collapse>Толщина</div>
+                        <div class="filter__collapse">
+                          <div class="filter__fields">
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="depth"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >10</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="depth"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >16</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="depth"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >18</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox" hidden data-filter-more>
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="depth"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >19</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="depth"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >22</span
+                                >
+                              </label>
+                            </div>
+                            <div class="field-checkbox">
+                              <label class="field-checkbox__name">
+                                <input
+                                  class="field-checkbox__input"
+                                  type="checkbox"
+                                  name="depth"
+                                  value=""
+                                />
+                                <span class="field-checkbox__name-text"
+                                  >25</span
+                                >
+                              </label>
+                            </div>
+                          </div>
+                          <span class="filter__more" data-text-replace="Скрыть">Показать еще</span>
+                        </div>
+                      </div>
+                      <div class="filter__part">
+                        <div class="filter__name">Стоимость</div>
+                        <div class="filter__fields">
+                          <div class="filter__price">
+                            <label class="field-text field-text--sm">
+                              <input
+                                class="field-text__input"
+                                type="text"
+                                name="price-from"
+                                placeholder="От 1 000"/>
+                            </label>
+                            <label class="field-text field-text--sm">
+                              <input
+                                class="field-text__input"
+                                type="text"
+                                name="price-to"
+                                placeholder="До 3 000"/>
+                            </label>
+                          </div>
+                          <div class="field-checkbox">
+                            <label class="field-checkbox__name">
+                              <input
+                                class="field-checkbox__input"
+                                type="checkbox"
+                                name="sale"
+                                value=""
+                              />
+                              <span class="field-checkbox__name-text"
+                                >Распродажа</span
+                              >
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="reset" class="btn btn--dark">Сбросить фильтры</button>
+                    </form>
+                  </div>
+                </aside>
+                <div class="catalog__layout" data-catalog-layout="grid">
+                  <div class="catalog__display">
+                    Показывать:
+                    <span class="catalog-view-list">Списком</span>
+                    <span class="catalog-view-grid active">Карточками</span>
+                  </div>
+                  <ul class="catalog__head">
+                    <li>Длина</li>
+                    <li>Ширина</li>
+                    <li>Толщина</li>
+                    <li>Стоимость</li>
+                  </ul>
+                  <div class="catalog__products">
+                    <div class="catalog__item">
+                      <div class="product">
+  <div class="product__badges">
+    <div class="badges">
+      <span class="badge badge--sale">-21%</span>
+      <span class="badge badge--new">NEW</span>
+    </div>
+  </div>
+  <div class="product__preview">
+    <picture>
+      <source
+        srcset="
+          img/content/product-preview.webp    1x,
+          img/content/product-preview@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          img/content/product-preview.jpg    1x,
+          img/content/product-preview@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img src="img/content/product-preview.jpg" alt="Кастамону. 1–сторонний" />
+    </picture>
+  </div>
+  <div class="product__info">
+    <div class="product__name">Кастамону. 1–сторонний</div>
+    <ul class="product__spec">
+      <li><span>Длина:</span> 2 800 мм</li>
+      <li><span>Ширина:</span> 2 070 мм</li>
+      <li><span>Толщина:</span> 10 мм</li>
+      <li class="product__size"><span>Размер:</span>2 800 х 2 070 мм</li>
+      <li class="product__price product__price--sale">
+        <span>Стоимость:</span> 1 785 ₽/шт <s>2 030 ₽/шт</s>
+      </li>
+    </ul>
+  </div>
+  <a href="product-detail.html" class="btn">Заказать</a>
+</div>
+
+                    </div>
+                    <div class="catalog__item">
+                      <div class="product">
+  <div class="product__badges">
+    <div class="badges">
+      <span class="badge badge--sale">-21%</span>
+      <span class="badge badge--new">NEW</span>
+    </div>
+  </div>
+  <div class="product__preview">
+    <picture>
+      <source
+        srcset="
+          img/content/product-preview.webp    1x,
+          img/content/product-preview@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          img/content/product-preview.jpg    1x,
+          img/content/product-preview@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img src="img/content/product-preview.jpg" alt="Кастамону. 1–сторонний" />
+    </picture>
+  </div>
+  <div class="product__info">
+    <div class="product__name">Кастамону. 1–сторонний</div>
+    <ul class="product__spec">
+      <li><span>Длина:</span> 2 800 мм</li>
+      <li><span>Ширина:</span> 2 070 мм</li>
+      <li><span>Толщина:</span> 10 мм</li>
+      <li class="product__size"><span>Размер:</span>2 800 х 2 070 мм</li>
+      <li class="product__price product__price--sale">
+        <span>Стоимость:</span> 1 785 ₽/шт <s>2 030 ₽/шт</s>
+      </li>
+    </ul>
+  </div>
+  <a href="product-detail.html" class="btn">Заказать</a>
+</div>
+
+                    </div>
+                    <div class="catalog__item">
+                      <div class="product">
+  <div class="product__badges">
+    <div class="badges">
+      <span class="badge badge--sale">-21%</span>
+      <span class="badge badge--new">NEW</span>
+    </div>
+  </div>
+  <div class="product__preview">
+    <picture>
+      <source
+        srcset="
+          img/content/product-preview.webp    1x,
+          img/content/product-preview@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          img/content/product-preview.jpg    1x,
+          img/content/product-preview@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img src="img/content/product-preview.jpg" alt="Кастамону. 1–сторонний" />
+    </picture>
+  </div>
+  <div class="product__info">
+    <div class="product__name">Кастамону. 1–сторонний</div>
+    <ul class="product__spec">
+      <li><span>Длина:</span> 2 800 мм</li>
+      <li><span>Ширина:</span> 2 070 мм</li>
+      <li><span>Толщина:</span> 10 мм</li>
+      <li class="product__price">
+        <span>Стоимость:</span> 2 030 ₽/шт</s>
+      </li>
+    </ul>
+  </div>
+  <a href="product-detail.html" class="btn">Заказать</a>
+</div>
+
+                    </div>
+                    <div class="catalog__item">
+                      <div class="product">
+  <div class="product__badges">
+    <div class="badges">
+      <span class="badge badge--sale">-21%</span>
+      <span class="badge badge--new">NEW</span>
+    </div>
+  </div>
+  <div class="product__preview">
+    <picture>
+      <source
+        srcset="
+          img/content/product-preview.webp    1x,
+          img/content/product-preview@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          img/content/product-preview.jpg    1x,
+          img/content/product-preview@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img src="img/content/product-preview.jpg" alt="Кастамону. 1–сторонний" />
+    </picture>
+  </div>
+  <div class="product__info">
+    <div class="product__name">Кастамону. 1–сторонний</div>
+    <ul class="product__spec">
+      <li><span>Длина:</span> 2 800 мм</li>
+      <li><span>Ширина:</span> 2 070 мм</li>
+      <li><span>Толщина:</span> 10 мм</li>
+      <li class="product__price">
+        <span>Стоимость:</span> 2 030 ₽/шт</s>
+      </li>
+    </ul>
+  </div>
+  <a href="product-detail.html" class="btn">Заказать</a>
+</div>
+
+                    </div>
+                    <div class="catalog__item">
+                      <div class="product">
+  <div class="product__badges">
+    <div class="badges">
+      <span class="badge badge--sale">-21%</span>
+      <span class="badge badge--new">NEW</span>
+    </div>
+  </div>
+  <div class="product__preview">
+    <picture>
+      <source
+        srcset="
+          img/content/product-preview.webp    1x,
+          img/content/product-preview@2x.webp 2x
+        "
+        type="image/webp"
+      />
+      <source
+        srcset="
+          img/content/product-preview.jpg    1x,
+          img/content/product-preview@2x.jpg 2x
+        "
+        type="image/jpeg"
+      />
+      <img src="img/content/product-preview.jpg" alt="Кастамону. 1–сторонний" />
+    </picture>
+  </div>
+  <div class="product__info">
+    <div class="product__name">Кастамону. 1–сторонний</div>
+    <ul class="product__spec">
+      <li><span>Длина:</span> 2 800 мм</li>
+      <li><span>Ширина:</span> 2 070 мм</li>
+      <li><span>Толщина:</span> 10 мм</li>
+      <li class="product__price">
+        <span>Стоимость:</span> 2 030 ₽/шт</s>
+      </li>
+    </ul>
+  </div>
+  <a href="product-detail.html" class="btn">Заказать</a>
+</div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="catalog__footer">
+                <ul class="pagenav">
+                  <li><a href="" class="pagenav__prev"></a></li>
+                  <li><a href="">1</a></li>
+                  <li><a href="">2</a></li>
+                  <li><a href="">3</a></li>
+                  <li><a href="">4</a></li>
+                  <li><a href="">5</a></li>
+                  <li><a href="" class="pagenav__next"></a></li>
+                </ul>
+                <button type="button" class="btn btn--outline">Загрузить еще</button>
+              </div>
+            </div>
+          </div>
+      </main>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer__contacts">
+          <div class="footer__title">Контакты</div>
+          <ul>
+            <li>
+              С -Пб, Пискарёвский <br />
+              проспект, 125 Х
+            </li>
+            <li><a href="tel:+78127190404">+7 (812) 719-04-04</a></li>
+          </ul>
+        </div>
+        <div class="footer__works">
+          <div class="footer__title">Режим работы</div>
+          <ul>
+            <li>Пн-Пт 9:00 - 18:00</li>
+          </ul>
+        </div>
+        <div class="footer__social social">
+          <a href="">
+            <svg width="40" height="40">
+              <use xlink:href="img/icons.svg#insta-white"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__nav footer__nav--about">
+        <span class="footer__title">О нас</span>
+        <ul>
+          <li><a href="about.html">О компании</a></li>
+          <li><a href="photo-gallery.html">Фотогалерея</a></li>
+          <li><a href="sert.html">Сертификаты</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav footer__nav--catalog">
+        <span class="footer__title">Каталог</span>
+        <ul>
+          <li><a href="stores.html">Пиломатериалы</a></li>
+          <li><a href="specifications.html">Плитные материалы</a></li>
+          <li>
+            <a href="instructions.html">Мебельный щит</a>
+          </li>
+          <li><a href="mounting.html">Шпон</a></li>
+          <li><a href="faq.html">Сопутствующие товары</a></li>
+          <li><a href="guarantee.html">Экзотика</a></li>
+        </ul>
+      </div>
+      <div class="footer__nav footer__nav--info">
+        <span class="footer__title">Информация</span>
+        <ul>
+          <li><a href="#">Доставка и оплата</a></li>
+          <li><a href="#">Статьи</a></li>
+          <li><a href="#">Скачать прайс лист</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <a href="">Политика конфеденциальности</a>
+      <div class="footer__copy">
+        <a href="">2001–2021 Торговый дом «Балтия» ©</a>
+        <a href="">ООО «Терра Вуд»</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="overlay"></div>
+<script src="js/vendor/tabbis.min.js"></script>
+<script src="js/vendor/splide.min.js"></script>
+
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

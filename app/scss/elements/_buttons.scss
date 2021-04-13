@@ -1,0 +1,120 @@
+.btn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  line-height: 1;
+  border: 1px solid transparent;
+  background-color: var(--color-main);
+  border-radius: 0px;
+  font-size: var(--fs-base);
+  font-weight: $font-semibold;
+  color: white;
+  transition: border-color var(--duration), background-color var(--duration),
+    color var(--duration);
+
+  // @include xl {
+  //   padding-top: 23px;
+  //   padding-bottom: 23px;
+  // }
+  // @include xl {
+  //   min-width: 220px;
+  // }
+
+  &:not(&--link) {
+    min-width: 140px;
+    padding: 16px;
+    justify-content: center;
+  }
+
+  @include fontSmooth;
+
+  &:hover,
+  &:active {
+    background-color: transparent;
+    border-color: var(--color-main);
+    color: var(--color-dark);
+    text-decoration: none;
+  }
+
+  &--link {
+    min-width: auto;
+    vertical-align: baseline;
+    color: var(--color-main);
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    text-align: left;
+
+    &.active {
+      &:after {
+        transform: translateY(-35%) rotate(-135deg);
+      }
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-color-hover !important;
+      outline: none;
+    }
+  }
+
+  &--outline {
+    background-color: transparent;
+    border-color: var(--color-main);
+    color: var(--color-dark);
+
+    &:hover {
+      background-color: var(--color-main);
+      color: white;
+    }
+
+    &.btn--dark {
+      background-color: transparent;
+      border-color: rgba($color: #000000, $alpha: 0.2);
+      color: var(--color-dark);
+    }
+  }
+
+  &--dark {
+    background-color: var(--color-dark);
+    color: white;
+
+    &:hover {
+      background-color: transparent;
+      border-color: var(--color-dark);
+      color: var(--color-dark);
+    }
+  }
+
+  &--wide {
+    width: 100%;
+    @include md {
+      max-width: 240px;
+      width: 100%;
+    }
+  }
+}
+
+.btn--disabled,
+.btn:disabled,
+.btn[disabled] {
+  cursor: not-allowed;
+  background-color: $btn-color-gray;
+  color: $gray;
+  box-shadow: none;
+  opacity: 0.6;
+
+  @at-root a.btn--disabled {
+    pointer-events: none;
+  }
+
+  &:visited {
+    // color: $gray;
+  }
+}

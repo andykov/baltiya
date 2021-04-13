@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>OptimizedHTML 5</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/favicon.png" />
+    <meta property="og:image" content="img/dest/preview.jpg" />
+    <link rel="stylesheet" href="css/app.min.css" />
+    <style>
+      /* HTML {
+        background: url('../img/pixel-perfect/category-xs.png') 50% 0 no-repeat;
+      }
+      @media screen and (min-width: 640px) {
+        html {
+          background: url('../img/pixel-perfect/category-md.png') 50% 0
+            no-repeat;
+        }
+      }
+
+      @media screen and (min-width: 992px) {
+        html {
+          background: url('../img/pixel-perfect/category-lg.png') 50% 0
+            no-repeat;
+        }
+      }
+
+      @media screen and (min-width: 1240px) {
+        html {
+          background: url('../img/pixel-perfect/category-xl.png') 50% 0
+            no-repeat;
+        }
+      }
+      BODY {
+        opacity: 0.5;
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="page-wrapper">
+      @@include('modules/_header.html')
+      <main class="main">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a href="/">Каталог</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span>Плитные материалы</span>
+            </li>
+          </ul>
+          <div class="main__content">
+            <h1>Плитные материалы</h1>
+            @@include('modules/catalog/_catalog-sub-category.html')
+          </div>
+        </div>
+      </main>
+      @@include('modules/_footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

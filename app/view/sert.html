@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>OptimizedHTML 5</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/favicon.png" />
+    <meta property="og:image" content="img/dest/preview.jpg" />
+    <link rel="stylesheet" href="css/vendor/baguetteBox.css" />
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      @@include('modules/_header.html')
+      <main class="main">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span>О компании</span>
+            </li>
+          </ul>
+          <div class="main__content">
+            <div class="main__title">
+              <h1>Сертификаты</h1>
+            </div>
+
+            <div class="tabs" data-tabs>
+              <button>Сертификаты соответствия</button>
+              <button>Контроль качества</button>
+            </div>
+
+            <div class="tabs-panes" data-panes>
+              <div>
+                <div class="gallery">
+                  <div class="gallery__item">
+                    <a href="img/content/sert-21.jpg"
+                      ><img src="img/content/sert-21.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-22.jpg"
+                      ><img src="img/content/sert-22.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-23.jpg"
+                      ><img src="img/content/sert-23.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-24.jpg"
+                      ><img src="img/content/sert-24.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-25.jpg"
+                      ><img src="img/content/sert-25.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-26.jpg"
+                      ><img src="img/content/sert-26.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-27.jpg"
+                      ><img src="img/content/sert-27.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-28.jpg"
+                      ><img src="img/content/sert-28.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-29.jpg"
+                      ><img src="img/content/sert-29.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-30.jpg"
+                      ><img src="img/content/sert-30.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-31.jpg"
+                      ><img src="img/content/sert-31.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-32.jpg"
+                      ><img src="img/content/sert-32.jpg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="gallery">
+                  <div class="gallery__item">
+                    <a href="img/content/sert-21.jpg"
+                      ><img src="img/content/sert-21.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-22.jpg"
+                      ><img src="img/content/sert-22.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-23.jpg"
+                      ><img src="img/content/sert-23.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-24.jpg"
+                      ><img src="img/content/sert-24.jpg" alt=""
+                    /></a>
+                  </div>
+                  <div class="gallery__item">
+                    <a href="img/content/sert-25.jpg"
+                      ><img src="img/content/sert-25.jpg" alt=""
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      @@include('modules/_footer.html')
+    </div>
+    <script src="js/vendor/baguetteBox.min.js"></script>
+    <script src="js/main.min.js"></script>
+    <script>
+      window.addEventListener('load', function () {
+        baguetteBox.run('.gallery', { async: true });
+      });
+    </script>
+  </body>
+</html>
