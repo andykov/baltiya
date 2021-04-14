@@ -1,4 +1,12 @@
 .nav {
+  a,
+  span,
+  .nav__link {
+    &.active {
+      color: #ea2e39;
+    }
+  }
+
   &__list {
     @include lg {
       display: flex;
@@ -7,10 +15,37 @@
   }
 
   &__item {
+    position: relative;
     line-height: 1;
 
     @include md-max {
       border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    &.show {
+      [data-subnav-toggle] {
+        &::after {
+          transform: rotate(135deg);
+        }
+      }
+      .subnav {
+        display: block;
+      }
+      @include lg {
+        .nav__link {
+          &:hover {
+            border-color: transparent;
+          }
+        }
+        .subnav {
+          min-width: 135px;
+          padding: 15px;
+          opacity: 1;
+          height: auto;
+          overflow: visible;
+          box-shadow: 0px 8px 18px rgba(0, 0, 0, 0.09);
+        }
+      }
     }
   }
 
@@ -23,6 +58,7 @@
     border-bottom: 2px solid transparent;
     line-height: inherit;
     transition: border-bottom-color var(--duration);
+    cursor: pointer;
 
     @include md {
       font-size: var(--fs-medium);
@@ -30,6 +66,10 @@
 
     @include lg {
       font-size: var(--fs-small);
+
+      &:not(.active):hover {
+        border-bottom-color: var(--color-dark);
+      }
     }
 
     @include xl {
@@ -40,15 +80,66 @@
       padding: 13px 0;
     }
 
-    &:not(.active):hover {
-      border-bottom-color: var(--color-dark);
-    }
     &:hover,
     &:focus {
       text-decoration: none;
     }
-    &.active {
-      color: #ea2e39;
+
+    &[data-subnav-toggle] {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      &::after {
+        content: '';
+        width: 7px;
+        height: 7px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 6px;
+        border: 1px solid;
+        border-width: 0 0 1px 1px;
+        transform: translateY(-50%) rotate(-45deg);
+      }
     }
+  }
+}
+
+.subnav {
+  @include md-max {
+    margin-bottom: 12px;
+  }
+  &__item {
+    a {
+      font-size: 14px;
+      @include md-max {
+        opacity: 0.7;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 10px;
+
+      @include lg {
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+.subnav {
+  display: none;
+}
+@include lg {
+  .subnav {
+    display: block;
+    background-color: #fff;
+    position: absolute;
+    z-index: 10;
+    top: 100%;
+    right: 0;
+    opacity: 0;
+    padding: 0;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    transition: opacity 0.3s, box-shadow 0.3s;
   }
 }
