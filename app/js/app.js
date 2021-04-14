@@ -7,8 +7,6 @@ import {
 
 import setViewCurrentIndexSlide from './utils/setViewCurrentIndexSlide';
 
-import Dropdown from './modules/dropdown-native';
-import './modules/mobileNav';
 import './modules/initPhotoSwipe';
 import './modules/tabs';
 import './modules/photoGallery';
