@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>OptimizedHTML 5</title>
+    <meta name="description" content="Startup HTML template OptimizedHTML 5" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="img/favicon.png" />
+    <meta property="og:image" content="img/dest/preview.jpg" />
+    <link rel="stylesheet" href="css/vendor/splide-core.min.css" />
+    <link rel="stylesheet" href="css/app.min.css" />
+  </head>
+  <body>
+    <div class="page-wrapper">
+      @@include('modules/_header.html')
+      <main class="main">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item">
+              <a href="/">Главная</a>
+            </li>
+            <li class="breadcrumbs__item">
+              <span>Доставка и оплата</span>
+            </li>
+          </ul>
+          <article class="main__content">
+            <div class="container-narrow">
+              <div class="content-section">
+                <div class="main__title">
+                  <h1>Доставка</h1>
+                </div>
+                <div class="content">
+                  <h2>Собственная доставка</h2>
+                  <p>
+                    Компания осуществляет доставку продукции с наших складов.
+                  </p>
+                  <h2>Особенности доставки:</h2>
+                  <ul>
+                    <li>
+                      <p>
+                        доставка осуществляется по Санкт-Петербургу и области,
+                        возможна доставка по России;
+                      </p>
+                    </li>
+                    <li>
+                      <p>стоимость доставки уточняйте у менеджеров компании;</p>
+                    </li>
+                    <li>
+                      <p>гарантированная оперативность</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="content-section">
+                <div class="main__title">
+                  <h1>Оплата</h1>
+                </div>
+                <div class="content">
+                  <p>
+                    Оплатить продукцию «Торгового Дома «Балтия» вы можете любым
+                    способом:
+                  </p>
+                  <ul>
+                    <li>через банковскую карту</li>
+                    <li>по безналичному счету</li>
+                    <li>наличными</li>
+                  </ul>
+                  <div class="notice">
+                    При безналичной оплате необходимо произвести предоплату.
+                    <br />
+                    По карте и наличными оплата производится при получении.
+                  </div>
+                  <p>
+                    Более подробную информацию о доставке пиломатериалов следует
+                    уточнять у менеджеров ТД «Балтия» лично, по
+                    <a href="tel:+">телефону</a> или
+                    <a href="mailto:">электронной почте</a>.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="content-section">
+              @@include('modules/_form-contacts.html')
+            </div>
+          </article>
+
+          <div class="page-section">
+            <picture>
+              <source
+                srcset="
+                  img/content/delivery-img.webp    1x,
+                  img/content/delivery-img@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <a
+                href="https://st.depositphotos.com/1760224/3660/i/950/depositphotos_36606389-stock-photo-sport-success-on-sunset-background.jpg"
+              >
+                <img
+                  src="img/content/delivery-img.jpg"
+                  srcset="
+                    img/content/delivery-img.jpg    1x,
+                    img/content/delivery-img@2x.jpg 2x
+                  "
+                  alt=""
+              /></a>
+            </picture>
+          </div>
+        </div>
+      </main>
+      @@include('modules/_footer.html')
+    </div>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
